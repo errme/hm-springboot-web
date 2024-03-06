@@ -22,7 +22,6 @@ public class EmpController {
         return Result.success(empList);
     }
 
-
     /*@RequestMapping("/listEmp")
     public Result list(){
         //1. 加载并解析emp.xml
