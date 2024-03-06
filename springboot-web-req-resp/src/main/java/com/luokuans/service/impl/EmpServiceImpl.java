@@ -1,14 +1,18 @@
 package com.luokuans.service.impl;
 
 import com.luokuans.dao.EmpDao;
-import com.luokuans.dao.impl.EmpDaoA;
 import com.luokuans.pojo.Emp;
 import com.luokuans.service.EmpService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
-public class EmpServiceA implements EmpService {
+@Component
+public class EmpServiceImpl implements EmpService {
 
-    private EmpDao empDao = new EmpDaoA();
+    @Autowired
+    private EmpDao empDao;
 
     @Override
     public List<Emp> listEmp() {
