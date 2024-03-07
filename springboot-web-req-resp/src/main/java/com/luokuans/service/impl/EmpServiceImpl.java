@@ -5,10 +5,12 @@ import com.luokuans.pojo.Emp;
 import com.luokuans.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+// @Component
+@Service
 public class EmpServiceImpl implements EmpService {
 
     @Autowired

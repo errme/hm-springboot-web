@@ -4,10 +4,12 @@ import com.luokuans.dao.EmpDao;
 import com.luokuans.pojo.Emp;
 import com.luokuans.utils.XmlParserUtils;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Component //将当前对象交给IOC容器管理,成为IOC容器的bean
+// @Component //将当前对象交给IOC容器管理,成为IOC容器的bean
+@Repository
 public class EmpDaoImpl implements EmpDao {
     @Override
     public List<Emp> listEmp() {
