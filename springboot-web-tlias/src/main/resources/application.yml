@@ -1,0 +1,48 @@
+#驱动类名称
+spring:
+  #  datasource:
+  #    driver-class-name:
+  #      com.mysql.cj.jdbc.Driver
+  #  #数据库连接的url
+  #  url:
+  #    jdbc:mysql://localhost:3306/hm_mybatis
+  #  #连接数据库的用户名
+  #  username:
+  #    root
+  #  #连接数据库的密码
+  #  password:
+  #    123456
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/hm_mybatis?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #文件上传的配置
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+  #控制台打印日志
+mybatis:
+  configuration:
+    log-impl:
+      org.apache.ibatis.logging.stdout.StdOutImpl
+  
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+
+
+#阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-chengdu.aliyuncs.com
+    accessKeyId: LTAI5tPw3aYbaL2in91bPpug
+    accessKeySecret: iXSrsVUuOosm6uKPNZeg3axYQv1A4Y
+    bucketName: wyylovepk
+
+
+#spring事务管理日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug

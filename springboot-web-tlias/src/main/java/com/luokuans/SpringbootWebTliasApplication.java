@@ -2,12 +2,15 @@ package com.luokuans;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
+
+@ServletComponentScan
 @SpringBootApplication
-public class SpringbootWebMybatisApplication {
+public class SpringbootWebTliasApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootWebMybatisApplication.class, args);
+        SpringApplication.run(SpringbootWebTliasApplication.class, args);
     }
 
 }
